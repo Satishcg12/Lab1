@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:orientation="vertical"
+    a:paddingTop="?attr/actionBarSize"
+    a:paddingHorizontal="20dp"
+    >
+    <ImageView
+        a:id="@+id/imageView"
+        a:contentDescription="logo"
+        a:layout_width="100dp"
+        a:layout_height="100dp"
+        a:src="@drawable/image"
+        a:scaleType="centerCrop"
+        a:layout_gravity="center"/>
+
+    <TextView
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:text="User Registration"
+        a:textSize="20sp"
+        a:textStyle="bold"
+        a:layout_gravity="center"
+        a:padding="10dp"/>
+
+    <EditText
+        a:id="@+id/etName"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:inputType="text"
+        a:autofillHints="name"
+        a:hint="Enter Name"/>
+
+    <EditText
+        a:id="@+id/etEmail"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:hint="Enter Email"
+        a:inputType="textEmailAddress"
+        a:autofillHints="email"
+        />
+
+    <RadioGroup
+        a:id="@+id/radioGroupGender"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:orientation="horizontal">
+
+        <RadioButton
+            a:id="@+id/radioMale"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="Male" />
+
+        <RadioButton
+            a:id="@+id/radioFemale"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="Female" />
+    </RadioGroup>
+
+    <CheckBox
+        a:id="@+id/checkBoxTerms"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:text="Accept Terms &amp; Conditions"/>
+
+    <Spinner
+        a:id="@+id/spinnerCountry"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        />
+
+    <Button
+        a:id="@+id/btnSubmit"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:text="Register"/>
+
+</LinearLayout>
